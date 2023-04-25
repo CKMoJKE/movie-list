@@ -7,10 +7,9 @@ import TVShowsList from "./components/TVShowsList";
 import SingleTvshow from "./components/SingleTvshow.js";
 import Terms from "./components/Terms";
 import Error from "./components/Error";
-import HomeBtn from "./components/HomeBtn";
 import { Route, Routes } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div>
       <NavBar />
@@ -26,9 +25,6 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
-      <HomeBtn />
     </div>
   );
 }
-
-export default App;
