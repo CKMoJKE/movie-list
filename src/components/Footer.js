@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TMDB_logo from "../img/logo/tmdb.svg";
 
 const viewTMDB = () => {
@@ -16,12 +17,12 @@ const Footer = () => {
         <div className="text-stone-200 py-3 flex flex-col">
           <h1 className="text-lg font-bold">Угоди</h1>
           <div className="flex gap-5">
-            <a href="/terms" className="text-sm">
+            <Link to="/terms" className="text-sm">
               Умови користування
-            </a>
-            <a href="/" className="text-sm">
+            </Link>
+            <Link to="/" className="text-sm">
               Політика конфіденційності
-            </a>
+            </Link>
           </div>
         </div>
       </div>
